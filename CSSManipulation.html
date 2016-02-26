@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <script type="text/javascript">
+  
+    function update(bd_red,bd_green,bd_blue,bd_width,bc_red,bc_green,bc_blue)
+    {
+        var someTag = document.getElementById("theTagsId");
+        someTag.style.padding = "10px";
+        someTag.style.borderStyle = "solid";
+        someTag.style.borderColor = "#" + bd_red + bd_green + bd_blue;
+        someTag.style.borderWidth = bd_width;
+        someTag.style.backgroundColor = "#" + bc_red +bc_green + bc_blue;
+        
+    }
+    
+ 
+  </script>
+
+  </head>
+  <body>
+    <p id="theTagsId">ksfdklsklfdklsfdkljsfdsfdkjsfdkjsd fkljdkljsfdkljfdkjsfdljjsfdjhsfdkjkjsfdj klfdkljsfdjhfhioeij</p>
+    
+    <p> Enter as a hexadecimal value 00-FF
+    <form>
+    Border:<br>
+    R: <input type="text" id="bd_red"><br>
+    G: <input type="text" id="bd_green"><br>
+    B: <input type="text" id="bd_blue"><br>
+    Width: <input type="text" id="bd_width"><br>
+    <br>
+    Background Color:<br>
+    R: <input type="text" id="bc_red"><br>
+    G: <input type="text" id="bc_green"><br>
+    B: <input type="text" id="bc_blue"><br>
+  </form>
+  
+  <button onclick="update(bd_red.value,bd_green.value,bd_blue.value,bd_width.value,bc_red.value,bc_green.value,bc_blue.value)">Update</button>
+  
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Slide Show</title>
+    </head>
+    <script type="text/javascript">
+    var img1 = new Image();
+img1.src = "hydrangea.jpg";
+var img2 = new Image();
+img2.src = "lotus.jpg";
+var img3 = new Image();
+img3.src = "worldsUgliestDog.jpg";
+var img4 = new Image();
+img4.src = "Snapdragon.jpg";
+var img5 = new Image();
+img5.src = "sunflowers.jpg";
+
+var num = 1;
+
+function previous()
+{
+    num = num-1;
+    if(num==0)
+    {
+        num = 5;
+    }
+    
+    document.slide.src=eval("img"+num+".src");
+}
+
+function next()
+{
+    num = num+1;
+    if(num==6)
+    {
+        num = 1;
+    }
+    document.slide.src=eval("img"+num+".src");
+}
+    </script>
+
+  
+  <body>
+  
+   <img src="hydrangea.jpg" name="slide" width="250" height="200" />
+    <br>
+   
+   <button onclick="previous()">Previous</button>
+   <button onclick="next()">Next</button>
+  </body>
+
+</html>

@@ -1,0 +1,25 @@
+
+body 
+{
+    background-image: url(hydrangea.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+p
+{
+    background-color: pale blue;
+    color: white;
+    font-family: arial;
+    font-size: 22pt;
+}
+
+a:hover
+{
+    background-color: red;
+    color: blue
+}
+p.blah
+{
+    color: black;
+}
